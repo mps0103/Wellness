@@ -129,8 +129,9 @@
     </style>
     <style>
         .card {
-            width: 18rem; /* Set the desired width */
-            height: 14rem; /* Set the desired height */
+            width: auto; /* Set the desired width */
+            height: 13rem; /* Set the desired height */
+            position:relative;
         }
         .card-button {
         position: absolute; /* Set position to absolute */
@@ -138,12 +139,17 @@
         left: 50%; /* Position button horizontally in the middle */
         transform: translateX(-50%); /* Center the button horizontally */
     }
+    @media (max-width: 1000px) {
+    .card {
+        width: 100%; /* Adjust the width to fill the container */
+    }
+}
 </style>
 
-<div class="container">
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3 my-3 " >
+<div class="container ">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3 my-3 align-middle " >
         <!-- Card 1 -->
-        <div class="col">
+        <div class="col ">
             <div class="card text-center" data-aos="zoom-in"  data-aos-duration="1000">
                 <div class="card-body">
                     <h5 class="card-title">Depression</h5>
@@ -447,11 +453,13 @@
 </div>
 
 
+<!-- Card 1 to 4 ends -->
+
 
 
 
 <div class="container">
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3 my-3 " >
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3 my-3  " >
         <!-- Card 5 -->
         <div class="col">
             <div class="card text-center" data-aos="zoom-in"  data-aos-duration="1000">
